@@ -1,7 +1,9 @@
+**If you are using Curse Client V5, please update it to Twitch Client or download manually the addon, it's not longer supported by Curse and contains bugged updates.**
+
 # AethysRotation
 
 AethysRotation is a World of Warcraft addon to provide the player useful and precise information to execute the best possible DPS rotation in every situation.
-The project is hosted on [GitHub](https://github.com/SimCMinMax/AethysRotation) and powered by [AethysCore](https://github.com/SimCMinMax/AethysRotation).
+The project is hosted on [GitHub](https://github.com/SimCMinMax/AethysRotation) and powered by [AethysCore](https://github.com/SimCMinMax/AethysCore).
 It is maintained by [Aethys](https://github.com/Aethys256/) and the [SimCMinMax](https://github.com/orgs/SimCMinMax/people) team.
 Also, you can find it on [Curse](https://mods.curse.com/addons/wow/aethysrotation) and [CurseForge](https://wow.curseforge.com/projects/aethysrotation).
 
@@ -61,6 +63,9 @@ Finally, launch symlink.bat
 - [Skasch](https://github.com/skasch) for what we built together and the motivation he gave to me.
 - [Riff](https://github.com/tombell) for his great feedback.
 
+## Advanced Users / Developper Notes
+If you want to use the addon directly from the [GitHub repository](https://github.com/SimCMinMax/AethysRotation), you would have to symlink every folders from this repository (AethysRotation folder and every class modules but the template) to your WoW Addons folder.
+Furthermore, to make it working, you need to add the only dependency that is [AethysCore](https://github.com/SimCMinMax/AethysCore) following the same processus (symlink AethysCore & AethysCache from the repository).
 
 More features including a GUI are coming when more rotations will be done. Currently every rotation settings are in the Settings.lua file.
 Stay tuned !
