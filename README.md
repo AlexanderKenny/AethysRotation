@@ -1,19 +1,24 @@
-**If you are using Curse Client V5, please update it to Twitch Client or download manually the addon, it's not longer supported by Curse and contains bugged updates.**
+
+**If you are using Curse Client V5, please upgrade to Twitch Client or download manually the addon, it's no longer supported by Curse and contains bugged updates.**
+
+**If you are experiencing issues with AoE rotation (likely Abilities not being recommended), be sure to have enemies nameplates enabled and enough nameplates shown (camera can hide them).**
 
 # AethysRotation
+[![GitHub license](https://img.shields.io/badge/license-EUPL-blue.svg)](https://raw.githubusercontent.com/SimCMinMax/AethysRotation/master/LICENSE) [![GitHub forks](https://img.shields.io/github/forks/SimCMinMax/AethysRotation.svg)](https://github.com/SimCMinMax/AethysRotation/network) [![GitHub stars](https://img.shields.io/github/stars/SimCMinMax/AethysRotation.svg)](https://github.com/SimCMinMax/AethysRotation/stargazers) [![GitHub issues](https://img.shields.io/github/issues/SimCMinMax/AethysRotation.svg)](https://github.com/SimCMinMax/AethysRotation/issues)
 
 AethysRotation is a World of Warcraft addon to provide the player useful and precise information to execute the best possible DPS rotation in every situation.
 The project is hosted on [GitHub](https://github.com/SimCMinMax/AethysRotation) and powered by [AethysCore](https://github.com/SimCMinMax/AethysCore).
 It is maintained by [Aethys](https://github.com/Aethys256/) and the [SimCMinMax](https://github.com/orgs/SimCMinMax/people) team.
 Also, you can find it on [Curse](https://mods.curse.com/project/103143) and [CurseForge](https://www.curseforge.com/projects/103143/).
 
-_There are a lot of helpful commands, do '/aer help' to see them in-game !_
+**There are a lot of helpful commands, do '/aer help' to see them in-game !
+Although, most of the commands and options are being moving to Addons Panels, you can see them by going into Interface -> Addons -> AethysRotation.**
 
 Feel free to join our [Discord](https://discord.gg/tFR2uvK). Feedback is highly appreciated !
 
 ## Key Features
 - Main Icon that shows the next ability you should cast.
-- Two smaller icons above the previous one that shows the useful CDs/OffGCD-Abilities to use.
+- Two smaller icons above the previous one that shows the useful OffGCD abilities to use.
 - One medium icon on the left that shows every ability that should be cycled (i.e. multi-dotting).
 - One medium-small icon on the upper-left that does proposals about situational abilities (trinkets, potions, ...).
 - Toggles to turn On/Off the CDs or AoE to adjust the rotation according to the situation (the addon can be disabled this way aswell).
@@ -24,25 +29,39 @@ Every rotation is based on [SimulationCraft](http://simulationcraft.org/) [Actio
 
 ## Special Features
 - Handle both Single Target and AoE rotations (it auto adapts).
-- Optimized Pooling of resources when needed (ex: energy before using cooldowns for Rogue).
+- Optimized pooling of resources when needed (ex: energy before using cooldowns as a rogue).
 - Accurate TimeToDie prediction.
-- Next cast prediction for Casters.
-- Special handlers for tricky abilities (ex: Finality or Exsanguinated Bleed for Rogue).
-- Solo Mode to prioritize survivability over DPS.
+- Next cast prediction for casters.
+- Special handlers for tricky abilities (ex: Finality or Exsanguinated bleeds for rogues).
+- Solo Mode to prioritize survivability over DPS. (If implemented in the rotation)
 
 ## Supported Rotations
-- Death Knight Unholy _[Beta]_
-- Demon Hunter Vengeance _[Beta]_
-- Hunter BeastMastery (Credits: [Nia](https://github.com/Nianel))
-- Hunter Marskmanship _[Beta]_ (Credits: [Nia](https://github.com/Nianel))
-- Hunter Survival (Credits: [Nia](https://github.com/Nianel))
-- Paladin Retribution _[Outdated]_
-- Priest Shadow (Credits: [KutiKuti](https://github.com/Kutikuti))
-- Rogue Assassination
-- Rogue Outlaw
-- Rogue Subtlety
-- Shaman Enhancement (Credits: [Tael](https://github.com/Tae-l))
-- Warrior Fury _[Beta]_ (Credits: [Nia](https://github.com/Nianel))
+| Class        | Specs                                                                                 |                                                                                   |                                                                                 |
+| :---         | :---                                                                                  | :---                                                                              | :---                                                                            |
+| Death Knight | [![Blood](https://img.shields.io/badge/Blood-WIP-orange.svg)]()                       | [![Frost](https://img.shields.io/badge/Frost-OK-brightgreen.svg)]()               | [![Unholy](https://img.shields.io/badge/Unholy-OK-brightgreen.svg)]()           |
+| Demon Hunter | [![Vengeance](https://img.shields.io/badge/Vengeance-Outdated-red.svg)]()             |                                                                                   |                                                                                 |
+| Druid        | [![Balance](https://img.shields.io/badge/Balance-OK-brightgreen.svg)]()               | [![Guardian](https://img.shields.io/badge/Guardian-OK-brightgreen.svg)]()         | [![Feral](https://img.shields.io/badge/Fire-WIP-orange.svg)]()                  |
+| Hunter       | [![Beast Mastery](https://img.shields.io/badge/Beast%20Mastery-OK-brightgreen.svg)]() | [![Marksmanship](https://img.shields.io/badge/Marksmanship-OK-brightgreen.svg)]() | [![Survival](https://img.shields.io/badge/Survival-OK-brightgreen.svg)]()       |
+| Mage         | [![Frost](https://img.shields.io/badge/Frost-OK-brightgreen.svg)]()                   | [![Fire](https://img.shields.io/badge/Fire-WIP-orange.svg)]()                     |                                                                                 |
+| Monk         | [![Windwalker](https://img.shields.io/badge/Windwalker-OK-brightgreen.svg)]()         |                                                                                   |                                                                                 |
+| Paladin      | [![Protection](https://img.shields.io/badge/Protection-OK-brightgreen.svg)]()         | [![Retribution](https://img.shields.io/badge/Retribution-OK-brightgreen.svg)]()   |                                                                                 |
+| Priest       | [![Shadow](https://img.shields.io/badge/Shadow-OK-brightgreen.svg)]()                 |                                                                                   |                                                                                 |
+| Rogue        | [![Assassination](https://img.shields.io/badge/Assassination-OK-brightgreen.svg)]()   | [![Outlaw](https://img.shields.io/badge/Outlaw-OK-brightgreen.svg)]()             | [![Subtlety](https://img.shields.io/badge/Subtlety-OK-brightgreen.svg)]()       |
+| Shaman       | [![Enhancement](https://img.shields.io/badge/Enhancement-OK-brightgreen.svg)]()       | [![Elemental](https://img.shields.io/badge/Elemental-OK-brightgreen.svg)]()       |                                                                                 |
+| Warlock      | [![Affliction](https://img.shields.io/badge/Affliction-OK-brightgreen.svg)]()         | [![Demonology](https://img.shields.io/badge/Demonology-OK-brightgreen.svg)]()     | [![Destruction](https://img.shields.io/badge/Destruction-OK-brightgreen.svg)]() |
+| Warrior      | [![Arms](https://img.shields.io/badge/Arms-OK-brightgreen.svg)]()                     | [![Fury](https://img.shields.io/badge/Fury-OK-brightgreen.svg)]()                 |                                                                                 |
+
+## Support the team
+| Name                                     | Maintaining                    | Since     | Donate                                                                                               | Watch                                                                                                |
+| :---                                     | :---                           | ---:      | :---:                                                                                                | :---:                                                                                                |
+| [Aethys](https://github.com/Aethys256)   | Core, Rogue, Paladin, Guardian |  Aug 2016 | [![Donate](https://img.shields.io/badge/Donate-PayPal-003087.svg)](https://www.paypal.me/Aethys/5)     | [![Stream](https://img.shields.io/badge/Stream-Twitch-6441a4.svg)](https://www.twitch.tv/aethys)     |
+| [Nia](https://github.com/Nianel)         | Hunter, Fury                   |  Feb 2017 | [![Donate](https://img.shields.io/badge/Donate-PayPal-003087.svg)](https://www.paypal.me/Nianel/5)     | [![Stream](https://img.shields.io/badge/Stream-Twitch-6441a4.svg)](https://www.twitch.tv/nianel)     |
+| [KutiKuti](https://github.com/Kutikuti)  | Core, Priest, Warlock, Balance |  Mar 2017 | [![Donate](https://img.shields.io/badge/Donate-PayPal-003087.svg)](https://www.paypal.me/kutikuti/5)   |                                                                                                      |
+| [Mystler](https://github.com/Mystler)    | Rogue                          |  May 2017 | [![Donate](https://img.shields.io/badge/Donate-PayPal-003087.svg)](https://www.paypal.me/Mystler/5)    |                                                                                                      |
+| [Krich](https://github.com/chrislopez24) | Death Knight                   |  Jun 2017 | [![Donate](https://img.shields.io/badge/Donate-PayPal-003087.svg)]()                                   |                                                                                                      |
+| [Lithium](https://github.com/lithium720) | Shaman, Arms                   |  Jun 2017 | [![Donate](https://img.shields.io/badge/Donate-PayPal-003087.svg)](https://www.paypal.me/lithium720/5) | [![Stream](https://img.shields.io/badge/Stream-Twitch-6441a4.svg)](https://www.twitch.tv/lithium720) |
+| [Glynny](https://github.com/Glynnyx)     | Mage                           |  Aug 2017 | [![Donate](https://img.shields.io/badge/Donate-PayPal-003087.svg)](https://www.paypal.me/Glynnyx/5)    | [![Stream](https://img.shields.io/badge/Stream-Twitch-6441a4.svg)](https://www.twitch.tv/glynny_x)   |
+
 
 ## Special Mention About SimC APL
 As said earlier, every rotation is based on SimulationCraft Action Priority Lists (APL).
@@ -53,9 +72,11 @@ I (Aethys) am one of the main Rogue theorycrafter and contributor to the Simulat
 
 ## Special Thanks
 - [SimulationCraft](http://simulationcraft.org/) for everything the project gives to the whole WoW Community.
-- [KutiKuti](https://github.com/Kutikuti), [Nia](https://github.com/Nianel) & [Tael](https://github.com/Tae-l) for their contributions to the project.
+- [KutiKuti](https://github.com/Kutikuti) & [Nia](https://github.com/Nianel) for their daily support.
 - [Skasch](https://github.com/skasch) for what we built together and the motivation he gave to me.
-- [Riff](https://github.com/tombell) for his great feedback.
+- [Riff](https://github.com/tombell) for his great feedback and UI tweaks.
+- [Mystler](https://github.com/Mystler) for his help on everything related to rogues that frees me a lot of time.
+- [Tael](https://github.com/Tae-l), [Locke](https://github.com/Lockem90), [3L00DStrike](https://github.com/3L00DStrike), [Zulandia](https://github.com/AlexanderKenny), [Kojiyama](https://github.com/EvanMichaels) for the contributions.
 
 ## Advanced Users / Developper Notes
 If you want to use the addon directly from the [GitHub repository](https://github.com/SimCMinMax/AethysRotation), you would have to symlink every folders from this repository (AethysRotation folder and every class modules but the template) to your WoW Addons folder.
@@ -64,5 +85,4 @@ There is a script that does this for you, open symlink.bat and modify the two va
 Make sure AethysRotation's directories doesn't already exist as it will not override them.
 Finally, launch symlink.bat
 
-More features including a GUI are coming when more rotations will be done. Currently every rotation settings are in the Settings.lua file.
 Stay tuned !
